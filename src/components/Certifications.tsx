@@ -6,8 +6,8 @@ const certs = [
 
 export function Certifications() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xl font-semibold text-foreground">Certifications</h2>
+    <section className="mx-auto max-w-3xl px-6 py-14">
+      <h2 className="text-lg font-semibold text-foreground tracking-tight">Certifications</h2>
       <ul className="mt-6 flex flex-col gap-3">
         {certs.map((cert) => (
           <li key={cert.name} className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">

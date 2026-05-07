@@ -21,17 +21,21 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xl font-semibold text-foreground">Projects</h2>
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section id="projects" className="mx-auto max-w-3xl px-6 py-14">
+      <h2 className="text-lg font-semibold text-foreground tracking-tight">Projects</h2>
+      <div className="mt-8 flex flex-col gap-5">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="rounded-lg border border-border bg-card p-5 flex flex-col"
+            className="group rounded-xl border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/20"
           >
-            <span className="text-xs text-muted-foreground tracking-wide">{project.category}</span>
-            <h3 className="mt-2 text-base font-medium text-card-foreground">{project.title}</h3>
-            <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">
+            <span className="text-xs font-medium text-muted-foreground tracking-wide uppercase">
+              {project.category}
+            </span>
+            <h3 className="mt-2 text-base font-semibold text-card-foreground leading-snug">
+              {project.title}
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
               {project.description}
             </p>
           </div>
