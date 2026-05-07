@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { LinkedinIcon, Mail } from "lucide-react";
 
 export function Contact() {
   return (
