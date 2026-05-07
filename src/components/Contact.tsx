@@ -23,7 +23,10 @@ export function Contact() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 text-base text-foreground hover:text-primary transition-colors group"
         >
-          <Linkedin size={18} className="text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+          <LinkedinIcon
+            size={18}
+            className="text-muted-foreground group-hover:text-primary transition-colors shrink-0"
+          />
           <span className="underline underline-offset-3 decoration-border group-hover:decoration-primary transition-colors">
             LinkedIn
           </span>
