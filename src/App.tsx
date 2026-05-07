@@ -12,13 +12,16 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <div className="mx-auto max-w-3xl px-6">
+          <hr className="border-border" />
+        </div>
         <About />
         <Experience />
         <Projects />
         <Certifications />
         <Contact />
       </main>
-      <footer className="mx-auto max-w-3xl px-6 py-8 border-t border-border">
+      <footer className="mx-auto max-w-3xl px-6 py-10 border-t border-border">
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Uzair Nasir
         </p>
