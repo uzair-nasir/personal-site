@@ -8,7 +8,7 @@ export function Hero() {
           <img
             src={headshot}
             alt="Uzair Nasir"
-            className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top"
+            className="w-40 h-52 md:w-44 md:h-56 rounded-xl object-cover object-top shadow-sm"
           />
         </div>
 

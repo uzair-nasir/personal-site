@@ -5,7 +5,7 @@ export function About() {
       <p className="mt-4 text-base text-muted-foreground leading-relaxed max-w-2xl">
         I'm a student at{" "}
         <a
-          href="https://www.tjhsst.edu/"
+          href="https://tjhsst.fcps.edu/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground underline underline-offset-3 decoration-border hover:decoration-foreground transition-colors"
