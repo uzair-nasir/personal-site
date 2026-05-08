@@ -12,9 +12,6 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <div className="mx-auto max-w-3xl px-6">
-          <hr className="border-border" />
-        </div>
         <About />
         <Experience />
         <Projects />
@@ -22,7 +19,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="mx-auto max-w-3xl px-6 py-10 border-t border-border">
-        <p className="text-sm text-muted-foreground">
+        <p className="text-xs text-muted-foreground tracking-wide">
           © {new Date().getFullYear()} Uzair Nasir
         </p>
       </footer>

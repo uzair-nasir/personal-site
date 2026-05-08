@@ -21,18 +21,20 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-3xl px-6 py-14">
-      <h2 className="text-lg font-semibold text-foreground tracking-tight">Projects</h2>
+    <section id="projects" className="mx-auto max-w-3xl px-6 py-16">
+      <h2 className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">
+        Projects
+      </h2>
       <div className="mt-8 flex flex-col gap-5">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="group rounded-xl border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/20"
+            className="rounded-lg border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/25"
           >
-            <span className="text-xs font-medium text-muted-foreground tracking-wide uppercase">
+            <span className="text-[0.65rem] font-semibold text-muted-foreground tracking-[0.12em] uppercase">
               {project.category}
             </span>
-            <h3 className="mt-2 text-base font-semibold text-card-foreground leading-snug">
+            <h3 className="mt-2 text-[0.95rem] font-semibold text-card-foreground leading-snug">
               {project.title}
             </h3>
             <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
