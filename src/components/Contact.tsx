@@ -1,7 +1,7 @@
 export function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">
+    <section id="contact" className="mx-auto max-w-4xl px-6 py-20">
+      <h2 className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
         Contact
       </h2>
       <p className="mt-5 text-[0.95rem] text-muted-foreground leading-relaxed">

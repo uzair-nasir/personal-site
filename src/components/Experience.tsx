@@ -6,7 +6,7 @@ const experiences = [
     dates: "Jan 2026 – Apr 2026",
     type: "Internship",
     description:
-      "Conducted surveys, interviews, and mixed-method research across community stakeholders. Co-authored academic work tied to ESSA 2026 and synthesized qualitative and quantitative data into evidence-based policy recommendations. Applied ethical research practices and responsible data handling throughout.",
+      "Conducted surveys, interviews, and mixed-method research across community stakeholders. Co-authored academic work tied to ESSA 2026 and synthesized qualitative and quantitative data into evidence-based policy recommendations.",
   },
   {
     title: "AI & Backend Engineering Intern",
@@ -24,7 +24,7 @@ const experiences = [
     dates: "Aug 2025 – Present",
     type: "Internship",
     description:
-      "Led a 12-person team to design and deliver a cybersecurity training module focused on digital risk awareness and AI-related threats. Used generative AI tools to accelerate content development and built data visualizations in Tableau, Power BI, and Google Analytics for non-technical audiences. Applied SQL, Azure, and AWS across data storage and cloud-based workflows.",
+      "Led a 12-person team to design and deliver a cybersecurity training module on digital risk awareness and AI-related threats. Built data visualizations in Tableau, Power BI, and Google Analytics using tools like ChatGPT, Gamma, NotebookLM, and Synthesia. Applied SQL, Azure, and AWS across data storage and cloud-based workflows.",
   },
   {
     title: "DataGen Scholar — Micro-Job",
@@ -33,49 +33,53 @@ const experiences = [
     dates: "Aug 2025 – Present",
     type: "Part-time",
     description:
-      "Conducted market research to surface actionable insights for client decision-making. Cleaned and aggregated datasets before analysis, and used generative AI tools to improve project efficiency and communicate results to leadership.",
+      "Conducted market research to surface actionable insights for client decision-making. Cleaned and aggregated datasets before analysis, and used generative AI tools to improve efficiency and communicate results to leadership.",
   },
 ];
 
 export function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">
-        Experience
-      </h2>
-      <div className="mt-8 flex flex-col gap-5">
-        {experiences.map((exp) => (
-          <div
-            key={exp.title}
-            className="rounded-lg border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/25"
-          >
-            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
-              <div>
-                <h3 className="text-[0.95rem] font-semibold text-card-foreground leading-snug">
-                  {exp.title}
-                </h3>
-                <div className="flex items-center gap-2 mt-1.5">
-                  <a
-                    href={exp.orgUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-primary font-medium hover:underline underline-offset-2 transition-colors"
-                  >
-                    {exp.org}
-                  </a>
-                  <span className="text-muted-foreground text-xs">·</span>
-                  <span className="text-xs text-muted-foreground">{exp.type}</span>
+    <section id="experience" className="bg-surface">
+      <div className="mx-auto max-w-4xl px-6 py-20">
+        <h2 className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
+          Experience
+        </h2>
+        <div className="mt-10 grid gap-4">
+          {experiences.map((exp) => (
+            <div
+              key={exp.title}
+              className="rounded-xl bg-card border border-border/60 p-6 transition-all hover:border-primary/20 hover:shadow-sm"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                <div>
+                  <h3 className="text-[0.95rem] font-semibold text-card-foreground leading-snug">
+                    {exp.title}
+                  </h3>
+                  <div className="flex items-center gap-2 mt-1.5">
+                    <a
+                      href={exp.orgUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary font-medium hover:underline underline-offset-2 transition-colors"
+                    >
+                      {exp.org}
+                    </a>
+                    <span className="text-muted-foreground text-xs">·</span>
+                    <span className="text-xs text-muted-foreground">
+                      {exp.type}
+                    </span>
+                  </div>
                 </div>
+                <span className="text-xs text-muted-foreground shrink-0 sm:text-right sm:pt-1 tracking-wide">
+                  {exp.dates}
+                </span>
               </div>
-              <span className="text-xs text-muted-foreground shrink-0 sm:text-right sm:pt-1 tracking-wide">
-                {exp.dates}
-              </span>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                {exp.description}
+              </p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              {exp.description}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

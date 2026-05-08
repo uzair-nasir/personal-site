@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -11,13 +10,13 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
-      <div className="mx-auto max-w-3xl px-6 flex items-center justify-between h-14">
+    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
+      <div className="mx-auto max-w-4xl px-6 flex items-center justify-between h-14">
         <a
           href="#"
           className="text-sm font-semibold text-foreground tracking-tight"
         >
-          Uzair Nasir
+          UN
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
