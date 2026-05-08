@@ -21,23 +21,23 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">
+    <section id="projects" className="mx-auto max-w-4xl px-6 py-20">
+      <h2 className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
         Projects
       </h2>
-      <div className="mt-8 flex flex-col gap-5">
+      <div className="mt-10 grid sm:grid-cols-3 gap-4">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="rounded-lg border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/25"
+            className="rounded-xl border border-border/60 bg-card p-6 flex flex-col transition-all hover:border-primary/20 hover:shadow-sm"
           >
-            <span className="text-[0.65rem] font-semibold text-muted-foreground tracking-[0.12em] uppercase">
+            <span className="text-[0.65rem] font-semibold text-primary/70 tracking-[0.15em] uppercase">
               {project.category}
             </span>
-            <h3 className="mt-2 text-[0.95rem] font-semibold text-card-foreground leading-snug">
+            <h3 className="mt-3 text-[0.95rem] font-semibold text-card-foreground leading-snug">
               {project.title}
             </h3>
-            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">
               {project.description}
             </p>
           </div>
