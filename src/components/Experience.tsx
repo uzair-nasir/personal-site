@@ -39,20 +39,22 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-3xl px-6 py-14">
-      <h2 className="text-lg font-semibold text-foreground tracking-tight">Experience</h2>
-      <div className="mt-8 flex flex-col gap-6">
+    <section id="experience" className="mx-auto max-w-3xl px-6 py-16">
+      <h2 className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">
+        Experience
+      </h2>
+      <div className="mt-8 flex flex-col gap-5">
         {experiences.map((exp) => (
           <div
             key={exp.title}
-            className="rounded-xl border border-border bg-card p-5 sm:p-6"
+            className="rounded-lg border border-border bg-card p-5 sm:p-6 transition-colors hover:border-primary/25"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
               <div>
-                <h3 className="text-base font-semibold text-card-foreground leading-snug">
+                <h3 className="text-[0.95rem] font-semibold text-card-foreground leading-snug">
                   {exp.title}
                 </h3>
-                <div className="flex items-center gap-2 mt-1">
+                <div className="flex items-center gap-2 mt-1.5">
                   <a
                     href={exp.orgUrl}
                     target="_blank"
@@ -65,7 +67,7 @@ export function Experience() {
                   <span className="text-xs text-muted-foreground">{exp.type}</span>
                 </div>
               </div>
-              <span className="text-sm text-muted-foreground shrink-0 sm:text-right sm:pt-0.5">
+              <span className="text-xs text-muted-foreground shrink-0 sm:text-right sm:pt-1 tracking-wide">
                 {exp.dates}
               </span>
             </div>
