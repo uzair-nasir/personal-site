@@ -21,12 +21,6 @@ export function Intro() {
 
         {/* Content — name first */}
         <div className="flex flex-col">
-          <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-primary uppercase">
-            Portfolio
-          </span>
-          <h1 className="mt-4 text-[2.4rem] md:text-[3.4rem] font-bold text-foreground leading-[1.02] tracking-tight">
-            Uzair Nasir.
-          </h1>
           <p className="mt-5 text-[1.05rem] md:text-[1.15rem] text-foreground/80 leading-[1.6] max-w-xl">
           Focused on cybersecurity, AI, and applied research, with an interest in practical problem-solving and technical execution.
           </p>
