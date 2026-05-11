@@ -1,4 +1,13 @@
 const experiences = [
+   {
+    title: "Technical Project Coordinator",
+    org: "Mason Small Business Development Center",
+    orgUrl: "https://masonsbdc.org/",
+    dates: "Apr 2026 - Present",
+    type: "Part-time",
+    description:
+      "Supported Mason SBDC’s technical operations by maintaining WordPress pages, updating plugins, publishing workshops, managing event submissions, and assisting with Google Workspace tools. Helped improve website reliability, SEO, and internal workflows while supporting outreach efforts for small business programs.",
+  },
   {
     title: "Youth Research Council Fellow",
     org: "George Mason University",
