@@ -30,32 +30,45 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-accent-warm: var(--accent-warm);
   --font-heading: "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(0.955 0.008 75);
-  --foreground: oklch(0.20 0.015 255);
-  --card: oklch(0.97 0.006 75);
-  --card-foreground: oklch(0.20 0.015 255);
-  --popover: oklch(0.97 0.006 75);
-  --popover-foreground: oklch(0.20 0.015 255);
-  --primary: oklch(0.42 0.05 240);
-  --primary-foreground: oklch(0.97 0.005 75);
-  --secondary: oklch(0.92 0.008 75);
-  --secondary-foreground: oklch(0.28 0.015 255);
-  --muted: oklch(0.92 0.008 75);
-  --muted-foreground: oklch(0.50 0.015 255);
-  --accent: oklch(0.92 0.008 75);
-  --accent-foreground: oklch(0.20 0.015 255);
+  /* Warm cream background */
+  --background: oklch(0.965 0.012 78);
+  /* Deep ink — rich, near-black with warm undertone */
+  --foreground: oklch(0.18 0.02 250);
+  --ink: oklch(0.16 0.025 250);
+
+  --card: oklch(0.985 0.008 80);
+  --card-foreground: oklch(0.18 0.02 250);
+  --popover: oklch(0.985 0.008 80);
+  --popover-foreground: oklch(0.18 0.02 250);
+
+  /* Deep forest-teal primary — distinctive, restrained */
+  --primary: oklch(0.36 0.06 195);
+  --primary-foreground: oklch(0.98 0.005 80);
+
+  /* Warm ochre accent for occasional emphasis */
+  --accent-warm: oklch(0.62 0.13 55);
+
+  --secondary: oklch(0.93 0.012 78);
+  --secondary-foreground: oklch(0.25 0.02 250);
+  --muted: oklch(0.92 0.012 78);
+  --muted-foreground: oklch(0.46 0.02 245);
+  --accent: oklch(0.92 0.012 78);
+  --accent-foreground: oklch(0.18 0.02 250);
+
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.88 0.010 75);
-  --input: oklch(0.88 0.010 75);
-  --ring: oklch(0.42 0.05 240);
-  --surface: oklch(0.935 0.010 75);
+  --border: oklch(0.87 0.014 78);
+  --input: oklch(0.87 0.014 78);
+  --ring: oklch(0.36 0.06 195);
+  --surface: oklch(0.94 0.014 78);
 }
 
 @layer base {
@@ -69,6 +82,7 @@
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
   }
 
   h1, h2, h3, h4, h5, h6 {
