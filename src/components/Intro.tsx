@@ -3,7 +3,7 @@ import headshot from "@/assets/headshot.png";
 export function Intro() {
   return (
     <section className="mx-auto max-w-4xl px-6 pt-10 pb-16 md:pt-14 md:pb-20">
-      <div className="grid md:grid-cols-[300px_1fr] gap-12 md:gap-16 items-center">
+      <div className="grid md:grid-cols-[300px_1fr] gap-12 md:gap-16 items-start">
         {/* Portrait */}
         <div className="flex justify-center md:justify-start">
           <div className="relative">
@@ -21,7 +21,7 @@ export function Intro() {
 
         {/* Content — name first */}
         <div className="flex flex-col">
-          <p className="mt-5 text-[1.05rem] md:text-[1.15rem] text-foreground/80 leading-[1.6] max-w-xl">
+          <p className="text-[1.05rem] md:text-[1.15rem] text-foreground/80 leading-[1.6] max-w-xl">
           Focused on cybersecurity, AI, and applied research, with an interest in practical problem-solving and technical execution.
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
