@@ -2,7 +2,7 @@ import headshot from "@/assets/headshot.png";
 
 export function Intro() {
   return (
-    <section className="mx-auto max-w-4xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+    <section className="mx-auto max-w-4xl px-6 pt-20 pb-12 md:pt-24 md:pb-16">
       <div className="grid md:grid-cols-[300px_1fr] gap-12 md:gap-16 items-center">
         {/* Portrait */}
         <div className="flex justify-center md:justify-start">
