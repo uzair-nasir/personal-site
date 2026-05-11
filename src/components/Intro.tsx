@@ -20,7 +20,7 @@ export function Intro() {
         </div>
 
         {/* Content — name first */}
-        <div className="flex flex-col">
+        <div className="flex flex-col md:-mt-6">
           <p className="text-[1.05rem] md:text-[1.15rem] text-foreground/80 leading-[1.6] max-w-xl">
           Focused on cybersecurity, AI, and applied research, with an interest in practical problem-solving and technical execution.
           </p>
