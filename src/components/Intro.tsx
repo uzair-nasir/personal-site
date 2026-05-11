@@ -10,10 +10,9 @@ export function Intro() {
             <img
               src={headshot}
               alt="Uzair Nasir"
-              className="relative w-64 h-80 md:w-[300px] md:h-[380px] rounded-xl object-cover object-top"
-              style={{
-                boxShadow:
-                  "0 24px 60px -20px rgba(20,30,50,0.22), 0 8px 20px -8px rgba(20,30,50,0.10)",
+              className="relative w-64 h-80 md:w-[300px] md:h-[380px] rounded-lg object-cover object-top"
+             style={{
+               boxShadow: "0 10px 30px -18px rgba(20,30,50,0.18)"
               }}
             />
           </div>
