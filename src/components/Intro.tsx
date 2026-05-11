@@ -36,6 +36,18 @@ export function Intro() {
             research — focused on building things that are clear, useful, and
             well executed.
           </p>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Currently at{" "}
+            <a
+              href="https://tjhsst.fcps.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/80 underline decoration-border underline-offset-4 hover:decoration-primary hover:text-primary transition-colors"
+            >
+              Thomas Jefferson High School for Science and Technology
+            </a>
+            .
+          </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#experience"
