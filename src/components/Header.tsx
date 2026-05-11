@@ -11,20 +11,20 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
-      <div className="mx-auto max-w-4xl px-6 flex items-center justify-between h-14">
+      <div className="mx-auto max-w-4xl px-6 flex items-center justify-between h-16">
         <a
           href="#"
-          className="text-sm font-semibold text-foreground tracking-tight"
+          className="text-[0.95rem] font-semibold text-foreground tracking-tight"
         >
-          UN
+          Uzair Nasir
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-9">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[0.8rem] text-muted-foreground hover:text-foreground transition-colors tracking-wide"
+              className="text-[0.825rem] text-muted-foreground hover:text-foreground transition-colors tracking-wide"
             >
               {link.label}
             </a>
