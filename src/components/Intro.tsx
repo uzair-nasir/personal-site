@@ -7,10 +7,6 @@ export function Intro() {
         {/* Portrait */}
         <div className="flex justify-center md:justify-start">
           <div className="relative">
-            <div
-              className="absolute -inset-4 rounded-2xl bg-surface -rotate-2"
-              aria-hidden="true"
-            />
             <img
               src={headshot}
               alt="Uzair Nasir"
@@ -32,9 +28,7 @@ export function Intro() {
             Uzair Nasir.
           </h1>
           <p className="mt-5 text-[1.05rem] md:text-[1.15rem] text-foreground/80 leading-[1.6] max-w-xl">
-            Student engineer working across cybersecurity, AI, and applied
-            research — focused on building things that are clear, useful, and
-            well executed.
+          Focused on cybersecurity, AI, and applied research, with an interest in practical problem-solving and technical execution.
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
             Currently at{" "}
