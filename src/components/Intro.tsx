@@ -3,14 +3,14 @@ import headshot from "@/assets/headshot.png";
 export function Intro() {
   return (
     <section className="mx-auto max-w-4xl px-6 pt-10 pb-16 md:pt-14 md:pb-20">
-      <div className="grid md:grid-cols-[300px_1fr] gap-12 md:gap-16 items-center">
+      <div className="grid md:grid-cols-[420px_1fr] gap-12 md:gap-16 items-center">
         {/* Portrait */}
         <div className="flex justify-center md:justify-start">
           <div className="relative">
             <img
               src={headshot}
               alt="Uzair Nasir"
-              className="relative w-80 h-80 md:w-[580px] md:h-[580px] rounded-lg object-cover object-top"
+              className="relative w-80 h-80 md:w-[420px] md:h-[420px] rounded-lg object-cover object-top"
              style={{
                boxShadow: "0 10px 30px -18px rgba(20,30,50,0.18)"
               }}
