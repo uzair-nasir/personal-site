@@ -38,37 +38,33 @@
 
 :root {
   --radius: 0.5rem;
-  /* Warm cream background */
-  --background: oklch(0.965 0.012 78);
-  /* Deep ink — rich, near-black with warm undertone */
-  --foreground: oklch(0.18 0.02 250);
-  --ink: oklch(0.16 0.025 250);
+  /* Soft warm off-white */
+  --background: oklch(0.975 0.006 80);
+  --foreground: oklch(0.24 0.012 250);
+  --ink: oklch(0.2 0.012 250);
 
-  --card: oklch(0.985 0.008 80);
-  --card-foreground: oklch(0.18 0.02 250);
-  --popover: oklch(0.985 0.008 80);
-  --popover-foreground: oklch(0.18 0.02 250);
+  --card: oklch(0.98 0.005 80);
+  --card-foreground: oklch(0.24 0.012 250);
+  --popover: oklch(0.98 0.005 80);
+  --popover-foreground: oklch(0.24 0.012 250);
 
-  /* Deep forest-teal primary — distinctive, restrained */
-  --primary: oklch(0.36 0.06 195);
+  --primary: oklch(0.3 0.02 250);
   --primary-foreground: oklch(0.98 0.005 80);
+  --accent-warm: oklch(0.55 0.1 50);
 
-  /* Warm ochre accent for occasional emphasis */
-  --accent-warm: oklch(0.62 0.13 55);
-
-  --secondary: oklch(0.93 0.012 78);
-  --secondary-foreground: oklch(0.25 0.02 250);
-  --muted: oklch(0.92 0.012 78);
-  --muted-foreground: oklch(0.46 0.02 245);
-  --accent: oklch(0.92 0.012 78);
-  --accent-foreground: oklch(0.18 0.02 250);
+  --secondary: oklch(0.94 0.008 80);
+  --secondary-foreground: oklch(0.28 0.012 250);
+  --muted: oklch(0.94 0.008 80);
+  --muted-foreground: oklch(0.5 0.012 245);
+  --accent: oklch(0.94 0.008 80);
+  --accent-foreground: oklch(0.24 0.012 250);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.87 0.014 78);
-  --input: oklch(0.87 0.014 78);
-  --ring: oklch(0.36 0.06 195);
-  --surface: oklch(0.94 0.014 78);
+  --border: oklch(0.89 0.008 80);
+  --input: oklch(0.89 0.008 80);
+  --ring: oklch(0.3 0.02 250);
+  --surface: oklch(0.95 0.008 80);
 }
 
 @layer base {
